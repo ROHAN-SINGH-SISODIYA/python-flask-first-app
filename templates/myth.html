@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1>{{ the_title }}</h1>
+
+<img alt="Painting: Goddess Durga on a tiger's back" src="{{ url_for('static', filename='images/durga.jpg') }}">
+
+<ul>
+  <li><a href="{{ url_for('symbol') }}">As a symbol</a></li>
+  <li><a href="{{ url_for('index') }}">Home page</a></li>
+</ul>
+
+<p>In Chinese myth and culture, the tiger is one of the 12 animals of the Chinese zodiac. In Chinese art, the tiger is depicted as an earth symbol and equal rival of the Chinese dragon – the two representing matter and spirit respectively. The Southern Chinese martial art Hung Ga is based on the movements of the tiger and the crane. In Imperial China, a tiger was the personification of war and often represented the highest army general (or present day defense secretary), while the emperor and empress were represented by a dragon and phoenix, respectively. The White Tiger (Chinese: 白虎; pinyin: Bái Hǔ) is one of the Four Symbols of the Chinese constellations. It is sometimes called the White Tiger of the West (西方白虎), and it represents the west and the autumn season.</p>
+
+{% endblock %}

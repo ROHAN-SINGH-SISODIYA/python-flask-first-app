@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- to be filled by the Python script -->
+<h1>{{ the_title }}</h1>
+
+<!-- note how items from the "static" folder are linked -->
+<img alt="Photo: Bengal Tiger" src="{{ url_for('static', filename='images/tiger.jpg') }}">
+
+<p>This is the index page for my example Flask app.</p>
+
+<ul>
+  <!-- note how items from routes in the the Python script are linked -->
+  <li><a href="{{ url_for('myth') }}">In myth and legend</a></li>
+  <li><a href="{{ url_for('symbol') }}">As a symbol</a></li>
+</ul>
+
+<p>The tiger (<em>Panthera tigris</em>) is the largest cat species, most recognisable for their pattern of dark vertical stripes on reddish-orange fur with a lighter underside. The species is classified in the genus <em>Panthera</em> with the lion, leopard, jaguar and snow leopard. Tigers are apex predators, primarily preying on ungulates such as deer and bovids. They are territorial and generally solitary but social animals, often requiring large contiguous areas of habitat that support their prey requirements. This, coupled with the fact that they are indigenous to some of the more densely populated places on Earth, has caused significant conflicts with humans.</p>
+
+
+{% endblock %}

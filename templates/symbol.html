@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1>{{ the_title }}</h1>
+
+<img alt="Photo: Flag of Naam Tamilar" src="{{ url_for('static', filename='images/naam_tamilar_flag.jpg') }}">
+
+<ul>
+  <li><a href="{{ url_for('myth') }}">In myth and legend</a></li>
+  <li><a href="{{ url_for('index') }}">Home page</a></li>
+</ul>
+
+<p>The tiger is one of the animals displayed on the Pashupati seal of the Indus Valley Civilisation. The tiger was the emblem of the Chola Dynasty and was depicted on coins, seals and banners. The seals of several Chola copper coins show the tiger, the Pandyan emblem fish and the Chera emblem bow, indicating that the Cholas had achieved political supremacy over the latter two dynasties. Gold coins found in Kavilayadavalli in the Nellore district of Andhra Pradesh have motifs of the tiger, bow and some indistinct marks. The tiger symbol of Chola Empire was later adopted by the Liberation Tigers of Tamil Eelam and the tiger became a symbol of the unrecognised state of Tamil Eelam and Tamil independence movement.</p>
+
+
+{% endblock %}
